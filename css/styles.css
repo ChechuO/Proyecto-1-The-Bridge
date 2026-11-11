@@ -230,8 +230,7 @@ header {
     font-weight: var(--font-weight-regular);
     margin: var(--spacing-sm);
 }
-.about-card {
-}
+
 /*-------------- RESPONSIVE -------------*/
 
 @media (max-width: 768px) {
