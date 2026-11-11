@@ -1,104 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-  <head>
-    <title>Pagina de formulario</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta
-      name="description"
-      content="Portfolio personal de Jesus Olivar estudiante de desarrollo Fullstack"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://res.cloudinary.com/pslzx5jd/image/upload/v1793211604/Dragon-minimalista_blanco.png"
-    />
-    <meta name="author" content="Jesus Olivar" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <header>
-      <a href="index.html"
-        ><img
-          src="https://res.cloudinary.com/pslzx5jd/image/upload/v1793211657/Dragon-minimalista_negro.png"
-          alt="logo de un gato con cuernos de dragon"
-          height="40"
-          width="40"
-      /></a>
-      <!-- Quitar altura y anchura y ponerla con css-->
-      <nav>
-        <ul>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Cheatsheets</a></li>
-          <li><a href="#">Recursos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <form action="#" method="POST">
-        <fieldset>
-          <legend>Formulario de contacto</legend>
-          <div>
-            <label for="nombre">Nombre</label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Nombre completo"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="asunto">Asunto</label>
-            <input
-              type="text"
-              id="asunto"
-              name="asunto"
-              placeholder="Asunto"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="mensaje">Mensaje</label>
-            <div>
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                cols="40"
-                rows="6"
-                placeholder="Escribe tu mensaje aquí..."
-                required
-              ></textarea>
+    <head>
+        <title>Pagina de Contacto</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="description" content="Portfolio personal de Jesus Olivar estudiante de desarrollo Fullstack" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://res.cloudinary.com/pslzx5jd/image/upload/v1793211604/Dragon-minimalista_blanco.png" />
+        <meta name="author" content="Jesus Olivar" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-content container">
+                <a href="index.html"
+                    ><img
+                        id="logo-jesus"
+                        src="https://res.cloudinary.com/pslzx5jd/image/upload/v1793211604/Dragon-minimalista_blanco.png"
+                        alt="logo" />
+                </a>
+                <nav class="nav-header">
+                    <ul class="nav-header-list">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#cheatsheets">Cheatsheets</a></li>
+                        <li><a href="#recursos">Recursos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-          </div>
+        </header>
+        <main>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required />
+                    </div>
 
-          <button type="submit">Enviar</button>
-          <button type="reset">Reset</button>
-        </fieldset>
-      </form>
-    </main>
-    <footer>
-      <small
-        >&copy; 2026 Jesus Olivar Miguelañez - Estudiante Fullstack
-        Developer</small
-      >
-    </footer>
-  </body>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required />
+                    </div>
+
+                    <div>
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto" required />
+                    </div>
+
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <div>
+                            <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                cols="40"
+                                rows="6"
+                                placeholder="Escribe tu mensaje aquí..."
+                                required></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2026 Jesus Olivar Miguelañez - Estudiante Fullstack Developer</p>
+        </footer>
+        <script type="module" src="script.js"></script>
+    </body>
 </html>
